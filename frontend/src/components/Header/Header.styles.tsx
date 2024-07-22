@@ -103,12 +103,12 @@ export const NavSearchIcon = styled.button`
   margin-right: 0.8rem;
   -webkit-transform: translateY(1px);
   transform: translateY(1px);
-  
-  svg {
-    height: 2rem;
-    width: 2rem;
-    fill: #f7f7f7;
-  }
+`
+
+export const NavSearchSvg = styled.svg`
+  height: 2rem;
+  width: 2rem;
+  fill: #f7f7f7;
 `
 
 export const NavSearchInput = styled.input`
@@ -148,10 +148,10 @@ export const NavSearchInput = styled.input`
   }
 `
 
-export const HeaderLogo = styled.div`
-  img {
-    height: 3.5rem;
-  }
+export const HeaderLogo = styled.div``
+
+export const HeaderLogoItem = styled.img`
+  height: 3.5rem;
 `
 
 export const UserNavContainer = styled(NavContainer)`

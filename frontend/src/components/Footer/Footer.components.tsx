@@ -1,19 +1,40 @@
-import LogoGreen from "../../assets/img/logo-green.png"
+import LogoGreen from "../../assets/img/logo-green.png";
+import {
+  FooterContainer,
+  Copyright,
+  FooterLogo,
+  LogoItem,
+  NavContainer,
+  NavItem,
+  NavLink,
+} from "./Footer.styles";
 
 export default function Footer() {
-  return <div className="footer">
-    <div className="footer__logo">
-      <img src={LogoGreen} alt="Natours logo" />
-    </div>
-    <ul className="footer__nav">
-      <li><a href="/about-us">About us</a></li>
-      <li><a href="/download">Download apps</a></li>
-      <li><a href="/guide">Become a guide</a></li>
-      <li><a href="/careers">Careers</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-    <p className="footer__copyright">
-      &copy; by Nay Myo Aung - Software Engineer. All rights reserved.
-    </p>
-  </div>
+  return (
+    <FooterContainer>
+      <FooterLogo>
+        <LogoItem src={LogoGreen} alt="Natours" />
+      </FooterLogo>
+      <NavContainer>
+        <NavItem>
+          <NavLink to="/about-us">About us</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/download">Download apps</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/guide">Become a guide</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/careers">Careers</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/contact">Contact</NavLink>
+        </NavItem>
+      </NavContainer>
+      <Copyright>
+        &copy; by Nay Myo Aung - Software Engineer. All rights reserved.
+      </Copyright>
+    </FooterContainer>
+  );
 }

@@ -9,7 +9,7 @@ import {
 
 import App from './App.tsx'
 import './index.css'
-import Home from './components/Home/Home.components.tsx';
+import Home from './pages/Home/Home.pages.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
   )
 );
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('content__wrapper')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>

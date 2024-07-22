@@ -6,11 +6,13 @@ import { HeaderProps } from "../../types/User.types";
 import {
   HeaderContainer,
   HeaderLogo,
+  HeaderLogoItem,
   HeaderNavLink,
   HeaderNavSignup,
   NavSearch,
   NavSearchIcon,
   NavSearchInput,
+  NavSearchSvg,
   NavUserProfile,
   ToursNavContainer,
   UserNavContainer,
@@ -23,15 +25,15 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
         <HeaderNavLink to="/">All tours</HeaderNavLink>
         <NavSearch>
           <NavSearchIcon>
-            <svg>
+            <NavSearchSvg>
               <use xlinkHref="/img/icons.svg#icon-search"></use>
-            </svg>
+            </NavSearchSvg>
           </NavSearchIcon>
           <NavSearchInput type="text" placeholder="Search tours" />
         </NavSearch>
       </ToursNavContainer>
       <HeaderLogo>
-        <img src={LogoWhite} alt="Natours logo" />
+        <HeaderLogoItem src={LogoWhite} alt="Natours logo" />
       </HeaderLogo>
       <UserNavContainer>
         <HeaderNavLink to="/booking">My bookings</HeaderNavLink>
