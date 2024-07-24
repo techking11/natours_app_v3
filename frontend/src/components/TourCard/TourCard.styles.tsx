@@ -26,6 +26,18 @@ export const CardHeader = styled.div`
   position: relative;
 `
 
+export const CardDiscount = styled.div`
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  padding: .5rem 1rem;
+  background-color: #f59840;
+  top: 0;
+  right: 0;
+  z-index: 1;
+`
+
 export const CardPicture = styled.div`
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);

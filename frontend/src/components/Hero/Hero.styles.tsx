@@ -1,8 +1,22 @@
 import styled from "styled-components";
 
+const section_rotate = '9vw';
+
 export const SectionHeader = styled.section`
   position: relative;
   height: 38vw;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - ${section_rotate}),
+    0 100%
+  );
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - ${section_rotate}),
+    0 100%
+  );
 `
 
 export const HeadingHero = styled.div`

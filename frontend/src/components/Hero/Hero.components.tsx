@@ -23,18 +23,18 @@ export default function Hero() {
       </HeadingHero>
       <HeadingBoxer>
         <HeadingPrimary>
-          <HeadingText>The Park <br />Camper Tour</HeadingText>
+          <HeadingText>The Park Camper</HeadingText>
         </HeadingPrimary>
         <HeadingBoxGroup>
           <HeadingBoxDetail>
             <HeadingBoxIcon>
-              <use xlinkHref="img/icons.svg#icon-clock"></use>
+              <use xlinkHref="/img/icons.svg#icon-clock"></use>
             </HeadingBoxIcon>
             <HeadingBoxText>10 days</HeadingBoxText>
           </HeadingBoxDetail>
           <HeadingBoxDetail>
             <HeadingBoxIcon>
-              <use xlinkHref="img/icons.svg#icon-map-pin"></use>
+              <use xlinkHref="/img/icons.svg#icon-map-pin"></use>
             </HeadingBoxIcon>
             <HeadingBoxText>Las Vegas, USA</HeadingBoxText>
           </HeadingBoxDetail>

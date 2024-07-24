@@ -19,12 +19,14 @@ import {
   FooterItem,
   CardRatings,
   FooterButton,
+  CardDiscount,
 } from "./TourCard.styles";
 
 export default function TourCard() {
   return (
     <CardItem>
       <CardHeader>
+        <CardDiscount>5% off</CardDiscount>
         <CardPicture>
           <PictureOverlay>&nbsp;</PictureOverlay>
           <PictureItem src={ToursCover1} alt="Tour 1" />
