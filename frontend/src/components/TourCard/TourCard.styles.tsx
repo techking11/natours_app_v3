@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { ButtonLink } from "../Global/Extensive.styles";
 
 export const CardItem = styled.div`
   border-radius: 3px;
@@ -160,18 +160,19 @@ export const CardRatings = styled.p`
   grid-row: 2 / 3;
 `
 
-export const FooterLink = styled(Link)`
+export const FooterButton = styled(ButtonLink)`
   grid-row: 1 / 3;
   justify-self: end;
   -ms-flex-item-align: center;
   align-self: center;
-`
-
-export const FooterButton = styled(FooterLink)`
   background-color: #55c57a;
   color: #fff;
   padding: 1.25rem 3rem !important;
-  font-size: 1.4rem !important;
+  border-radius: 10rem;
+  
+  &:hover {
+    text-shadow: none;
+  }
   
   &::after {
     background-color: #55c57a;

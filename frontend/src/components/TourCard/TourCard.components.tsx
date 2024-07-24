@@ -75,7 +75,7 @@ export default function TourCard() {
           <FooterVal>4.9 </FooterVal>
           <FooterText>rating (21)</FooterText>
         </CardRatings>
-        <FooterButton to="/">Details</FooterButton>
+        <FooterButton to="/tours/64bd36868b4c62a9cb577d8b">Details</FooterButton>
       </CardFooter>
     </CardItem>
   );

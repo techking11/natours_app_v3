@@ -7,15 +7,9 @@ import { Outlet } from "react-router-dom";
 
 export default function App() {
 
-  const userArr = {
-    id: 1,
-    name: 'Jonas',
-    photo: 'img/users/default.jpg'
-  }
-
   return (
     <Fragment>
-      <Header user={userArr} />
+      <Header />
       <Outlet />
       <Footer />
     </Fragment>

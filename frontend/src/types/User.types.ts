@@ -1,9 +1,5 @@
-export interface User {
+export type User = {
   id?: number,
   name?: string,
   photo?: string
-}
-
-export interface HeaderProps {
-  user: User
 }

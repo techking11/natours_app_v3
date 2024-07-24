@@ -1,7 +1,5 @@
-import React from "react";
 import LogoWhite from "../../assets/img/logo-white.png";
 import UserProfile from "../../assets/img/users/default.jpg"
-import { HeaderProps } from "../../types/User.types";
 
 import {
   HeaderContainer,
@@ -17,8 +15,16 @@ import {
   ToursNavContainer,
   UserNavContainer,
 } from "./Header.styles";
+import { User } from "../../types/User.types";
 
-const Header: React.FC<HeaderProps> = ({ user }) => {
+export default function Header() {
+
+  const user: User = {
+    // id: 1,
+    // name: 'Jonas',
+    // photo: 'img/users/default.jpg'
+  }
+
   return (
     <HeaderContainer>
       <ToursNavContainer>
@@ -37,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
       </HeaderLogo>
       <UserNavContainer>
         <HeaderNavLink to="/booking">My bookings</HeaderNavLink>
-        {user ? (
+        {user.id ? (
           <HeaderNavLink to="/account">
             <NavUserProfile src={UserProfile} alt="User Profile" />
             <span>Jonas</span>
@@ -51,5 +57,3 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
     </HeaderContainer>
   );
 }
-
-export default Header
