@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.main`
   background-color: #f7f7f7;
-  padding: 8rem 6rem;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;

@@ -1,3 +1,4 @@
+import Filters from "../../components/Filters/Filters.components";
 import Paginate from "../../components/Paginate/Paginate.components";
 import TourCard from "../../components/TourCard/TourCard.components";
 import useTitle from "../../components/UseTitle/UseTitle.components";
@@ -8,12 +9,15 @@ export default function Home() {
   const newArr = [1, 2, 3, 4, 5, 6];
   return (
     <HomeContainer>
-      <TourCardContainer>
-        {
-          newArr.map((i) => <TourCard key={i} />)
-        }
-      </TourCardContainer>
-      <Paginate />
+      <div className="overview-container">
+        < Filters />
+        <TourCardContainer>
+          {
+            newArr.map((i) => <TourCard key={i} />)
+          }
+        </TourCardContainer>
+        <Paginate />
+      </div>
     </HomeContainer>
   );
 }
