@@ -20,9 +20,9 @@ import { User } from "../../types/User.types";
 export default function Header() {
 
   const user: User = {
-    // id: 1,
-    // name: 'Jonas',
-    // photo: 'img/users/default.jpg'
+    id: 1,
+    name: 'Jonas',
+    photo: 'img/users/default.jpg'
   }
 
   return (
@@ -44,7 +44,7 @@ export default function Header() {
       <UserNavContainer>
         <HeaderNavLink to="/booking">My bookings</HeaderNavLink>
         {user.id ? (
-          <HeaderNavLink to="/account">
+          <HeaderNavLink to="/account/profile">
             <NavUserProfile src={UserProfile} alt="User Profile" />
             <span>Jonas</span>
           </HeaderNavLink>

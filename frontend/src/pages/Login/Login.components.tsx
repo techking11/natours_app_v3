@@ -29,7 +29,7 @@ export default function Login() {
             />
           </div>
           <div className="form__forgot">
-            <a className="btn-secondary" href="/auth/forgotPassword">
+            <a className="btn-secondary" href="/auth/forgotpassword">
               Forgot Password?
             </a>
           </div>

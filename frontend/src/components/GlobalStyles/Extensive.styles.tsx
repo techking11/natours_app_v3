@@ -25,11 +25,18 @@ export const ButtonLink = styled(Link)`
     color: #f7f7f7;
   }
     
-  &:hover,
+  &:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1rem 2rem #00000026;
+  }
+  
   &:active {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-    text-shadow: 0 0.7rem 1rem black;
+    -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem #00000026;
   }
     
   &:not(:last-child) {

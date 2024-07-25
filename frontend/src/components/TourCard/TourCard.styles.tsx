@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonLink } from "../Global/Extensive.styles";
+import { ButtonLink } from "../GlobalStyles/Extensive.styles";
 
 export const CardItem = styled.div`
   border-radius: 3px;
