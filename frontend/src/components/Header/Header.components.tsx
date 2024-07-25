@@ -49,8 +49,8 @@ export default function Header() {
             <span>Jonas</span>
           </HeaderNavLink>
         ) : (<>
-          <HeaderNavLink to="/login">Log in</HeaderNavLink>
-          <HeaderNavSignup to="/sign-up">Sign up</HeaderNavSignup>
+          <HeaderNavLink to="/auth/login">Log in</HeaderNavLink>
+          <HeaderNavSignup to="/auth/signup">Sign up</HeaderNavSignup>
         </>)
         }
       </UserNavContainer>

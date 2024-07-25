@@ -1175,10 +1175,10 @@
 }
 
 .btn-likes {
-  border: none;
   background-color: #fff;
   cursor: pointer;
   color: #777;
+  border: 1px solid #777;
   border-radius: 1rem;
   padding: 0.4rem 1rem;
 }
@@ -3600,6 +3600,7 @@ body {
 .icon-small {
   height: 2.25rem;
   width: 2.25rem;
+  display: inline-block;
 }
 
 .icon-medium {

@@ -1,3 +1,4 @@
+import FilterModal from "../../components/FilterModal/FilterModal.components";
 import Filters from "../../components/Filters/Filters.components";
 import Paginate from "../../components/Paginate/Paginate.components";
 import TourCard from "../../components/TourCard/TourCard.components";
@@ -9,6 +10,7 @@ export default function Home() {
   const newArr = [1, 2, 3, 4, 5, 6];
   return (
     <HomeContainer>
+      <FilterModal />
       <div className="overview-container">
         < Filters />
         <TourCardContainer>

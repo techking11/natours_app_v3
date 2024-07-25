@@ -1,6 +1,6 @@
 export default function FilterModal() {
   return (
-    <div className="filter__modal--container">
+    <div className="filter__modal--container" style={{ display: 'none' }}>
       <div id="alert-modal-hook"></div>
       <div id="backdrop-hook">
         <div className="backdrop"></div>
