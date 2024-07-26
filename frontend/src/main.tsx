@@ -22,6 +22,10 @@ import UsersReviews from './pages/UsersReviews/UsersReviews.pages.tsx';
 import ToursManageMain from './pages/ToursManage/ToursManageMain/ToursManageMain.pages.tsx';
 import ToursUpdate from './pages/ToursManage/ToursUpdate/ToursUpdate.pages.tsx';
 import ToursCreate from './pages/ToursManage/ToursCreate/ToursCreate.pages.tsx';
+import UsersMainManage from './pages/UsersManage/UsersMain/UsersMain.pages.tsx';
+import UsersCreateManage from './pages/UsersManage/UsersEdit/UsersEdit.pages.tsx';
+import ReviewsManage from './pages/ReviewsManage/ReviewsManage.pages.tsx';
+import BookingsManage from './pages/BookingsManage/BookingsManage.components.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,6 +45,12 @@ const router = createBrowserRouter(
       <Route path="manage/tours" element={<ToursManageMain />} />
       <Route path="manage/tours/edit" element={<ToursUpdate />} />
       <Route path="manage/tours/create" element={<ToursCreate />} />
+
+      <Route path="manage/users" element={<UsersMainManage />} />
+      <Route path="manage/users/edit" element={<UsersCreateManage />} />
+
+      <Route path="manage/reviews" element={<ReviewsManage />} />
+      <Route path="manage/bookings" element={<BookingsManage />} />
 
       <Route path="*" element="<h1>hello</h1>" />
     </Route>

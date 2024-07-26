@@ -1,5 +1,5 @@
 import UserMenu from "../../components/UserMenu/UserMenu.components";
-import UserProfile from "../../components/UserProfile/UserProfile.components";
+import UserProfile from "../../components/Profile/UserProfile/UserProfile.components";
 
 export default function UserAccount() {
   return (

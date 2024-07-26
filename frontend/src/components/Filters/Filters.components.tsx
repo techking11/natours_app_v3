@@ -1,6 +1,8 @@
+import { Fragment } from "react/jsx-runtime";
+
 export default function Filters() {
   return (
-    <div className="overview-actions">
+    <Fragment>
       <div className="manage-queries">
         <p>Total: 10</p>
         <p>Page: 1 (6 results)</p>
@@ -29,6 +31,6 @@ export default function Filters() {
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
