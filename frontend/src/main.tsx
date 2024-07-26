@@ -10,12 +10,18 @@ import App from './App.tsx'
 import './index.css'
 import Home from './pages/Home/Home.pages.tsx';
 import Tour from './pages/Tours/Tour.pages.tsx';
-import Login from './pages/Login/Login.components.tsx';
-import Signup from './pages/Signup/Signup.components.tsx';
-import AccountRecovery from './pages/AccountRecovery/AccountRecovery.components.tsx';
-import VerifyCode from './pages/VerifyCode/VerifyCode.components.tsx';
-import UserAccount from './pages/UserAccount/UserAccount.components.tsx';
-import UserAccountUpdate from './pages/UserAccountUpdate/UserAccountUpdate.components.tsx';
+import Login from './pages/Login/Login.pages.tsx';
+import Signup from './pages/Signup/Signup.pages.tsx';
+import AccountRecovery from './pages/AccountRecovery/AccountRecovery.pages.tsx';
+import VerifyCode from './pages/VerifyCode/VerifyCode.pages.tsx';
+import UserAccount from './pages/UserAccount/UserAccount.pages.tsx';
+import UserAccountUpdate from './pages/UserAccountUpdate/UserAccountUpdate.pages.tsx';
+import AccountSecurity from './pages/AccountSecurity/AccountSecurity.pages.tsx';
+import UsersBookings from './pages/UsersBookings/UsersBookings.pages.tsx';
+import UsersReviews from './pages/UsersReviews/UsersReviews.pages.tsx';
+import ToursManageMain from './pages/ToursManage/ToursManageMain/ToursManageMain.pages.tsx';
+import ToursUpdate from './pages/ToursManage/ToursUpdate/ToursUpdate.pages.tsx';
+import ToursCreate from './pages/ToursManage/ToursCreate/ToursCreate.pages.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +34,14 @@ const router = createBrowserRouter(
       <Route path="verifycode" element={<VerifyCode />} />
       <Route path="account/profile" element={<UserAccount />} />
       <Route path="account/profile/update" element={<UserAccountUpdate />} />
+      <Route path="account/security" element={<AccountSecurity />} />
+      <Route path="account/bookings" element={<UsersBookings />} />
+      <Route path="account/reviews" element={<UsersReviews />} />
+
+      <Route path="manage/tours" element={<ToursManageMain />} />
+      <Route path="manage/tours/edit" element={<ToursUpdate />} />
+      <Route path="manage/tours/create" element={<ToursCreate />} />
+
       <Route path="*" element="<h1>hello</h1>" />
     </Route>
   )

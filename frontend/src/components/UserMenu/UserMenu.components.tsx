@@ -32,6 +32,14 @@ export default function UserMenu() {
             My bookings
           </Link>
         </li>
+        <li>
+          <Link aria-current="page" className="" to="/account/reviews">
+            <svg>
+              <use xlinkHref="/img/icons.svg#icon-star"></use>
+            </svg>
+            My reviews
+          </Link>
+        </li>
       </ul>
       <div className="admin-nav">
         <h5 className="admin-nav__heading">admin</h5>
