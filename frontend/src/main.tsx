@@ -1,10 +1,12 @@
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { store } from './store/storeSetup.ts';
 
 import App from './App.tsx'
 import './index.css'
@@ -31,7 +33,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-      <Route path="tours/64bd36868b4c62a9cb577d8b" element={<Tour />} />9
+      <Route path="tours/64bd36868b4c62a9cb577d8b" element={<Tour />} />
       <Route path="auth/login" element={<Login />} />
       <Route path="auth/signup" element={<Signup />} />
       <Route path="auth/forgotpassword" element={<AccountRecovery />} />
@@ -57,8 +59,13 @@ const router = createBrowserRouter(
   )
 );
 
-ReactDOM.createRoot(document.getElementById('content__wrapper') as HTMLElement).render(
+const content_wrapper = document.getElementById('content__wrapper') as HTMLElement;
+const root = createRoot(content_wrapper);
+
+root.render(
   // <React.StrictMode>
-  <RouterProvider router={router} />
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
   // </React.StrictMode>
 )

@@ -15,7 +15,7 @@ import {
   ToursNavContainer,
   UserNavContainer,
 } from "./Header.styles";
-import { User } from "../../types/User.types";
+import { User } from "../../@types/User.types";
 
 export default function Header() {
 
