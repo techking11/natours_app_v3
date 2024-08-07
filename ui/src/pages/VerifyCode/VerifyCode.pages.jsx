@@ -17,7 +17,7 @@ export default function VerifyCode() {
               required
               minLength={6}
               maxLength={6}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="center">

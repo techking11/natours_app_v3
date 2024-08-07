@@ -1,4 +1,4 @@
-export default function TourReviews() {
+export default function TourReviews({ openModal }) {
   return (
     // <section className="section-reviews"><p className="no-review">No reviews yet</p></section>
 
@@ -100,7 +100,7 @@ export default function TourReviews() {
         </div>
       </div>
       <div className="center">
-        <button type="button" className="btn btn--medium btn--white">
+        <button type="button" className="btn btn--medium btn--white" onClick={openModal}>
           See all reviews
         </button>
       </div>

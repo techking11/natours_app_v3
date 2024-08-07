@@ -101,7 +101,7 @@ export default function UpdateTour() {
               type="text"
               placeholder="Tour Name"
               required
-              value="The Mountain Biker"
+              defaultValue="The Mountain Biker"
             />
           </div>
           <div className="form__group undefined">
@@ -113,7 +113,7 @@ export default function UpdateTour() {
               placeholder="Duration (in days)"
               required
               min="1"
-              value="15"
+              defaultValue="15"
             />
           </div>
           <div className="form__group undefined">
@@ -125,7 +125,7 @@ export default function UpdateTour() {
               placeholder="Group Size"
               required
               min="1"
-              value="20"
+              defaultValue="20"
             />
           </div>
           <div className="date_input ma-t-md">
@@ -133,10 +133,10 @@ export default function UpdateTour() {
               <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
             </svg>
             <select name="difficulty" required>
-              <option value="">LEVEL</option>
-              <option value="easy">EASY</option>
-              <option value="medium">MEDIUM</option>
-              <option value="difficult">DIFFICULT</option>
+              <option defaultValue="">LEVEL</option>
+              <option defaultValue="easy">EASY</option>
+              <option defaultValue="medium">MEDIUM</option>
+              <option defaultValue="difficult">DIFFICULT</option>
             </select>
           </div>
           <div className="form__group undefined">
@@ -147,7 +147,7 @@ export default function UpdateTour() {
               type="number"
               placeholder="Price ($)"
               required
-              value="649"
+              defaultValue="649"
             />
           </div>
           <div className="form__group undefined">
@@ -157,7 +157,7 @@ export default function UpdateTour() {
               id="priceDiscount"
               type="number"
               placeholder="Discount ($)"
-              value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group span-all-columns">
@@ -168,7 +168,7 @@ export default function UpdateTour() {
               type="text"
               placeholder="Summary"
               required
-              value="Riding bicycles often over rough terrain in Manali-Leh in chilling winter"
+              defaultValue="Riding bicycles often over rough terrain in Manali-Leh in chilling winter"
             />
           </div>
           <textarea
@@ -176,8 +176,7 @@ export default function UpdateTour() {
             rows={10}
             name="description"
             placeholder="Description"
-          >
-            Arguably the most exciting and dreaded mountain biking trail in
+            defaultValue="Arguably the most exciting and dreaded mountain biking trail in
             India, the Manali-Leh trail takes you through the best of the
             Himalayas. Starting from Manali, the route stretches over the
             Himalayas and spans up to Khardungla- the highest motorable road in
@@ -186,8 +185,8 @@ export default function UpdateTour() {
             nature in the backdrop, makes it one of the most challenging rides
             to accomplish. Dare to complete it at least once in a lifetime and
             live to narrate the stories of real thrill. This is the best place
-            htmlFor mountain biking in India.
-          </textarea>
+            htmlFor mountain biking in India."
+          />
           <div className="line span-all-columns line-small">&nbsp;</div>
           <div className="start-date-container span-all-columns">
             <p className="tourform-sub-heading">Start Dates:</p>
@@ -197,7 +196,7 @@ export default function UpdateTour() {
                 name="startDate"
                 id="startDate"
                 type="date"
-                value=""
+                defaultValue=""
               />
             </div>
             <button type="button" className="btn-secondary">
@@ -236,7 +235,7 @@ export default function UpdateTour() {
               type="text"
               placeholder="Name"
               required
-              value="Manali, IND"
+              defaultValue="Manali, IND"
             />
           </div>
           <div className="form__group undefined">
@@ -247,7 +246,7 @@ export default function UpdateTour() {
               type="text"
               placeholder="Latitude"
               required
-              value="32.2395067"
+              defaultValue="32.2395067"
             />
           </div>
           <div className="form__group undefined">
@@ -258,7 +257,7 @@ export default function UpdateTour() {
               type="text"
               placeholder="Longitude"
               required
-              value="77.1665201"
+              defaultValue="77.1665201"
             />
           </div>
           <div className="form__group span-all-columns">
@@ -269,7 +268,7 @@ export default function UpdateTour() {
               type="text"
               placeholder="Address"
               required
-              value="Tibetan colony rohtang road, Manali, Himachal Pradesh 175131"
+              defaultValue="Tibetan colony rohtang road, Manali, Himachal Pradesh 175131"
             />
           </div>
           <div className="line span-all-columns line-small">&nbsp;</div>
@@ -286,7 +285,7 @@ export default function UpdateTour() {
               id="locDesc"
               type="text"
               placeholder="Name"
-              value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -296,7 +295,7 @@ export default function UpdateTour() {
               id="locDay"
               type="number"
               placeholder="Day Number"
-              value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -306,7 +305,7 @@ export default function UpdateTour() {
               id="locLat"
               type="text"
               placeholder="Latitude"
-              value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -316,7 +315,7 @@ export default function UpdateTour() {
               id="locLong"
               type="text"
               placeholder="Longitude"
-              value=""
+              defaultValue=""
             />
           </div>
           <div className="location-item span-all-columns">
@@ -358,10 +357,10 @@ export default function UpdateTour() {
               <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
             </svg>
             <select name="leadGuide">
-              <option value="">LEAD GUIDE:</option>
-              <option value="5c8a21d02f8fb814b56fa189">Steve T. Scaife</option>
-              <option value="5c8a21f22f8fb814b56fa18a">Aarav Lynn</option>
-              <option value="5c8a22c62f8fb814b56fa18b">Miyah Myles</option>
+              <option defaultValue="">LEAD GUIDE:</option>
+              <option defaultValue="5c8a21d02f8fb814b56fa189">Steve T. Scaife</option>
+              <option defaultValue="5c8a21f22f8fb814b56fa18a">Aarav Lynn</option>
+              <option defaultValue="5c8a22c62f8fb814b56fa18b">Miyah Myles</option>
             </select>
           </div>
           <div className="other-guides">
@@ -370,11 +369,11 @@ export default function UpdateTour() {
                 <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
               </svg>
               <select name="tourGuide">
-                <option value="">OTHER GUIDE:</option>
-                <option value="5c8a1f292f8fb814b56fa184">Leo Gillespie</option>
-                <option value="5c8a23412f8fb814b56fa18c">Ben Hadley</option>
-                <option value="5c8a1f4e2f8fb814b56fa185">Jennifer Hardy</option>
-                <option value="5c8a201e2f8fb814b56fa186">Kate Morrison</option>
+                <option defaultValue="">OTHER GUIDE:</option>
+                <option defaultValue="5c8a1f292f8fb814b56fa184">Leo Gillespie</option>
+                <option defaultValue="5c8a23412f8fb814b56fa18c">Ben Hadley</option>
+                <option defaultValue="5c8a1f4e2f8fb814b56fa185">Jennifer Hardy</option>
+                <option defaultValue="5c8a201e2f8fb814b56fa186">Kate Morrison</option>
               </select>
             </div>
             <button type="button" className="btn-secondary">

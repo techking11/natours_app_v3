@@ -24,7 +24,7 @@ export default function ProfileUpdate() {
               placeholder="Name"
               required
               // minlength=""
-              value="Jonas Schmedtmann"
+              defaultValue="Jonas Schmedtmann"
             />
           </div>
           <div className="form__group ma-bt-md">
@@ -36,7 +36,7 @@ export default function ProfileUpdate() {
               placeholder="Email"
               required
               // minlength=""
-              value="admin@natours.io"
+              defaultValue="admin@natours.io"
             />
           </div>
           <div className="form__group react-tel-input ">
@@ -46,7 +46,7 @@ export default function ProfileUpdate() {
               placeholder="PHONE NUMBER"
               type="tel"
               required
-              value="+351 289 291 069"
+              defaultValue="+351 289 291 069"
               style={{
                 width: "100%",
                 height: "4.9rem",
@@ -129,7 +129,7 @@ export default function ProfileUpdate() {
               placeholder="current password"
               required
               minLength={8}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -141,7 +141,7 @@ export default function ProfileUpdate() {
               placeholder="New password"
               required
               minLength={8}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group ma-bt-lg">
@@ -153,7 +153,7 @@ export default function ProfileUpdate() {
               placeholder="Confirm password"
               required
               minLength={8}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group right">

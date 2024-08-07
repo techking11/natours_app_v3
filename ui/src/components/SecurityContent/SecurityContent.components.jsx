@@ -32,8 +32,8 @@ export default function SecurityContent() {
               id="deactivate"
               type="radio"
               name="activity"
-              value="deactivate"
-              checked
+              defaultValue="deactivate"
+              defaultChecked
             />
             <label htmlFor="deactivate">
               <p>
@@ -45,7 +45,7 @@ export default function SecurityContent() {
             </label>
           </div>
           <div className="input-radio-container">
-            <input id="delete" type="radio" name="activity" value="delete" />
+            <input id="delete" type="radio" name="activity" defaultValue="delete" />
             <label htmlFor="delete">
               <p>
                 <strong>Delete Account:</strong> Deleting your account is{" "}

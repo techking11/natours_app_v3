@@ -53,14 +53,14 @@ export default function BookTour() {
                 <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
               </svg>
               <select name="date">
-                <option value="">CHOOSE DATE:</option>
-                <option value="2023-12-06T10:00:00.000Z">
+                <option defaultValue="">CHOOSE DATE:</option>
+                <option defaultValue="2023-12-06T10:00:00.000Z">
                   December 6, 2023
                 </option>
-                <option value="2024-01-05T10:00:00.000Z">
+                <option defaultValue="2024-01-05T10:00:00.000Z">
                   January 5, 2024
                 </option>
-                <option value="2024-02-12T10:00:00.000Z">
+                <option defaultValue="2024-02-12T10:00:00.000Z">
                   February 12, 2024
                 </option>
               </select>

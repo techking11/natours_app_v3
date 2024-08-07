@@ -1,7 +1,7 @@
 import Filters from "../Filters/Filters.components";
 import Paginate from "../Paginate/Paginate.components";
 
-export default function ManageReviews() {
+export default function ManageReviews({ openModal }) {
   return (
     <div className="user-view__content">
       <div className="user-view__back-link"></div>
@@ -120,7 +120,7 @@ export default function ManageReviews() {
                 </svg>
                 <p className="action-type">Delete</p>
               </button>
-              <button type="button" className="btn-secondary btn--xs">
+              <button type="button" className="btn-secondary btn--xs" onClick={openModal}>
                 <svg className="icon-edit icon-small">
                   <use xlinkHref="/img/icons.svg#icon-edit"></use>
                 </svg>

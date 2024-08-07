@@ -24,7 +24,7 @@ export default function CreateTours() {
               type="text"
               placeholder="Tour Name"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -36,7 +36,7 @@ export default function CreateTours() {
               placeholder="Duration (in days)"
               required
               min="1"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -48,7 +48,7 @@ export default function CreateTours() {
               placeholder="Group Size"
               required
               min="1"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="date_input ma-t-md">
@@ -56,10 +56,10 @@ export default function CreateTours() {
               <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
             </svg>
             <select name="difficulty" required>
-              <option value="">LEVEL</option>
-              <option value="easy">EASY</option>
-              <option value="medium">MEDIUM</option>
-              <option value="difficult">DIFFICULT</option>
+              <option defaultValue="">LEVEL</option>
+              <option defaultValue="easy">EASY</option>
+              <option defaultValue="medium">MEDIUM</option>
+              <option defaultValue="difficult">DIFFICULT</option>
             </select>
           </div>
           <div className="form__group undefined">
@@ -70,7 +70,7 @@ export default function CreateTours() {
               type="number"
               placeholder="Price ($)"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -80,7 +80,7 @@ export default function CreateTours() {
               id="priceDiscount"
               type="number"
               placeholder="Discount ($)"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group span-all-columns">
@@ -91,7 +91,7 @@ export default function CreateTours() {
               type="text"
               placeholder="Summary"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <textarea
@@ -99,7 +99,7 @@ export default function CreateTours() {
             rows={10}
             name="description"
             placeholder="Description"
-          ></textarea>
+          />
           <div className="line span-all-columns line-small">&nbsp;</div>
           <div className="start-date-container span-all-columns">
             <p className="tourform-sub-heading">Start Dates:</p>
@@ -109,7 +109,7 @@ export default function CreateTours() {
                 name="startDate"
                 id="startDate"
                 type="date"
-              // value=""
+                defaultValue=""
               />
             </div>
             <button type="button" className="btn-secondary">
@@ -136,7 +136,7 @@ export default function CreateTours() {
               type="text"
               placeholder="Name"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -147,7 +147,7 @@ export default function CreateTours() {
               type="text"
               placeholder="Latitude"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -158,7 +158,7 @@ export default function CreateTours() {
               type="text"
               placeholder="Longitude"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group span-all-columns">
@@ -169,7 +169,7 @@ export default function CreateTours() {
               type="text"
               placeholder="Address"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="line span-all-columns line-small">&nbsp;</div>
@@ -186,7 +186,7 @@ export default function CreateTours() {
               id="locDesc"
               type="text"
               placeholder="Name"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -196,7 +196,7 @@ export default function CreateTours() {
               id="locDay"
               type="number"
               placeholder="Day Number"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -206,7 +206,7 @@ export default function CreateTours() {
               id="locLat"
               type="text"
               placeholder="Latitude"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -216,7 +216,7 @@ export default function CreateTours() {
               id="locLong"
               type="text"
               placeholder="Longitude"
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="location-item span-all-columns">
@@ -234,10 +234,10 @@ export default function CreateTours() {
               <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
             </svg>
             <select name="leadGuide">
-              {/* <option value="">LEAD GUIDE:</option> */}
-              <option value="5c8a21d02f8fb814b56fa189">Steve T. Scaife</option>
-              <option value="5c8a21f22f8fb814b56fa18a">Aarav Lynn</option>
-              <option value="5c8a22c62f8fb814b56fa18b">Miyah Myles</option>
+              <option defaultValue="">LEAD GUIDE:</option>
+              <option defaultValue="5c8a21d02f8fb814b56fa189">Steve T. Scaife</option>
+              <option defaultValue="5c8a21f22f8fb814b56fa18a">Aarav Lynn</option>
+              <option defaultValue="5c8a22c62f8fb814b56fa18b">Miyah Myles</option>
             </select>
           </div>
           <div className="other-guides">
@@ -246,11 +246,11 @@ export default function CreateTours() {
                 <use xlinkHref="/img/icons.svg#icon-chevron-down"></use>
               </svg>
               <select name="tourGuide">
-                {/* <option value="">OTHER GUIDE:</option> */}
-                <option value="5c8a1f292f8fb814b56fa184">Leo Gillespie</option>
-                <option value="5c8a23412f8fb814b56fa18c">Ben Hadley</option>
-                <option value="5c8a1f4e2f8fb814b56fa185">Jennifer Hardy</option>
-                <option value="5c8a201e2f8fb814b56fa186">Kate Morrison</option>
+                <option defaultValue="">OTHER GUIDE:</option>
+                <option defaultValue="5c8a1f292f8fb814b56fa184">Leo Gillespie</option>
+                <option defaultValue="5c8a23412f8fb814b56fa18c">Ben Hadley</option>
+                <option defaultValue="5c8a1f4e2f8fb814b56fa185">Jennifer Hardy</option>
+                <option defaultValue="5c8a201e2f8fb814b56fa186">Kate Morrison</option>
               </select>
             </div>
             <button type="button" className="btn-secondary">

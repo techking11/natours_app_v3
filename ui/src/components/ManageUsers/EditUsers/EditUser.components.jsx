@@ -26,7 +26,7 @@ export default function EditUser() {
               type="text"
               placeholder="Name"
               required
-              value="vvng"
+              defaultValue="vvng"
             />
           </div>
           <div className="form__group ma-bt-md">
@@ -37,7 +37,7 @@ export default function EditUser() {
               type="email"
               placeholder="Email"
               required
-              value="xyz@gmail.com"
+              defaultValue="xyz@gmail.com"
             />
           </div>
           <div className="form__group react-tel-input ">
@@ -47,7 +47,7 @@ export default function EditUser() {
               placeholder="PHONE NUMBER"
               type="tel"
               required
-              value="+91 97123-45687"
+              defaultValue="+91 97123-45687"
               style={{
                 width: "100%",
                 height: "4.9rem",

@@ -18,7 +18,7 @@ export default function AccountRecovery() {
             type="email"
             placeholder="email"
             required
-          // value=""
+            defaultValue=""
           />
         </div>
         <div className="sub-heading-container">

@@ -16,7 +16,7 @@ export default function Signup() {
               type="text"
               placeholder="Name"
               required
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -28,7 +28,7 @@ export default function Signup() {
               placeholder="Email"
               required
               minLength={8}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group react-tel-input ">
@@ -38,7 +38,7 @@ export default function Signup() {
               placeholder="PHONE NUMBER"
               type="tel"
               required
-              // value="+91"
+              defaultValue="+91"
               style={{
                 width: "100%",
                 height: "4.9rem",
@@ -90,7 +90,7 @@ export default function Signup() {
               placeholder="Password"
               required
               minLength={8}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="form__group undefined">
@@ -102,7 +102,7 @@ export default function Signup() {
               placeholder="Confirm password"
               required
               minLength={8}
-            // value=""
+              defaultValue=""
             />
           </div>
           <div className="center">
