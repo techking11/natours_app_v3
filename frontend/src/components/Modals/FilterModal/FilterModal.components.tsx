@@ -1,6 +1,21 @@
+import { useState } from "react";
+
+interface modalProps {
+  open: boolean,
+  onClose: () => void,
+}
+
 export default function FilterModal() {
+
+  const [showModal, setShowModal] = useState<boolean>(false);
+
+  function toggleModal() {
+    setShowModal(!showModal);
+    return showModal;
+  }
+
   return (
-    <div className="filter__modal--container">
+    <div className={`filter__modal--container ${toggleModal}} hidden`} >
       <div id="alert-modal-hook"></div>
       <div id="backdrop-hook">
         <div className="backdrop"></div>
@@ -48,6 +63,6 @@ export default function FilterModal() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

@@ -34,10 +34,12 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
       <Route path="tours/64bd36868b4c62a9cb577d8b" element={<Tour />} />
+
       <Route path="auth/login" element={<Login />} />
       <Route path="auth/signup" element={<Signup />} />
       <Route path="auth/forgotpassword" element={<AccountRecovery />} />
       <Route path="verifycode" element={<VerifyCode />} />
+
       <Route path="account/profile" element={<UserAccount />} />
       <Route path="account/profile/update" element={<UserAccountUpdate />} />
       <Route path="account/security" element={<AccountSecurity />} />
